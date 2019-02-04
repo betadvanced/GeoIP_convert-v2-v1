@@ -44,9 +44,9 @@ mkdir $DATE_TODAY && cd $DATE_TODAY && (
 
         $PIP install --upgrade pygeoip==0.3.2 ipaddr==2.2.0 &>/dev/null
 
-        curl -s https://raw.githubusercontent.com/emphazer/mmdb-convert/master/mmdb-convert.py         > mmdb-convert.py
-        curl -s https://raw.githubusercontent.com/emphazer/mmdb-convert/master/mmdb-convert-country.py > mmdb-convert-country.py
-        curl -s https://raw.githubusercontent.com/emphazer/mmutils/master/csv2dat.py                   > csv2dat.py
+        curl -s https://raw.githubusercontent.com/betadvanced/mmdb-convert/master/mmdb-convert.py         > mmdb-convert.py
+        curl -s https://raw.githubusercontent.com/betadvanced/mmdb-convert/master/mmdb-convert-country.py > mmdb-convert-country.py
+        curl -s https://raw.githubusercontent.com/betadvanced/mmutils/master/csv2dat.py                   > csv2dat.py
 
         # set the name for the release
         sed -i -r '/csv2dat.py [0-9]{8} Build/ s@csv2dat.py [0-9]{8}@'${NAME:-NAME}' '${DATE_TODAY:-20180000}'@' csv2dat.py
