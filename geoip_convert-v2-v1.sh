@@ -40,7 +40,7 @@ fi
 
 DATE_TODAY=$(date +"%Y%m%d")
 
-mkdir $DATE_TODAY && cd $DATE_TODAY && (
+mkdir $NAME && cd $NAME && (
 
         $PIP install --upgrade pygeoip==0.3.2 ipaddr==2.2.0 &>/dev/null
 
